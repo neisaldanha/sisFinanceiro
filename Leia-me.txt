@@ -4,7 +4,7 @@ Para acessar o sistema voce tem que:
 
 1 - criar o banco de dados(o arquivo está na pasta "Banco") e tabelas.
 
-2 - rodar o comando "php artisan make:seeder UsersTableSeeder" no terminal, para criar o usuario que vai logar no sistema.
+2 - rodar o comando "php artisan make:seeder UsersTableSeeder" no terminal para criar o usuario que vai logar no sistema.
 
 usuario:visitante@visitante.com
 senha:123456
