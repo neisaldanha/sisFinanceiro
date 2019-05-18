@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
     <link rel="logo" href="{{asset('img/logo.png')}}">
     <!--<link rel="shortcut icon" href="{{asset('img/favicon.ico')}}"> -->
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -64,7 +66,7 @@
                   <li class="user-footer">
 
                     <div class="pull-right">
-                      <a href="{{url('/logout')}}" class="btn btn-default btn-flat">Sair</a>
+                      <a href="{{url('/logout')}}" class="btn btn-danger btn-flat"><i class="fas fa-times"></i>  Sair</a>
                     </div>
                   </li>
                 </ul>
@@ -92,8 +94,8 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/estoque/produto')}}"><i class="fa fa-circle-o"></i> Produtos</a></li>
-                <li><a href="{{url('/estoque/categoria')}}"><i class="fa fa-circle-o"></i> Categorias</a></li>
+                <li><a href="{{url('/estoque/produto')}}"><i class="fas fa-archive"></i> Produtos</a></li>
+                <li><a href="{{url('/estoque/categoria')}}"><i class="fas fa-th-large"></i> Categorias</a></li>
               </ul>
             </li>
 
@@ -104,8 +106,8 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/compra/entrada')}}"><i class="fa fa-circle-o"></i> Entradas</a></li>
-                <li><a href="{{url('/compra/fornecedor')}}"><i class="fa fa-circle-o"></i> Fornecedores</a></li>
+                <li><a href="{{url('/compra/entrada')}}"><i class="fas fa-hand-holding-usd"></i> Entradas</a></li>
+                <li><a href="{{url('/compra/fornecedor')}}"><i class="fas fa-truck"></i> Fornecedores</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -115,8 +117,8 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/venda/venda')}}"><i class="fa fa-circle-o"></i> Vendas</a></li>
-                <li><a href="{{url('/venda/cliente')}}"><i class="fa fa-circle-o"></i> Clientes</a></li>
+                <li><a href="{{url('/venda/venda')}}"><i class="fas fa-cash-register"></i> Vendas</a></li>
+                <li><a href="{{url('/venda/cliente')}}"><i class="fas fa-user"></i> Clientes</a></li>
               </ul>
             </li>
 
@@ -126,7 +128,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/seguranca/usuario')}}"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+                <li><a href="{{url('/seguranca/usuario')}}"><i class="fas fa-users"></i> Usuarios</a></li>
 
               </ul>
             </li>

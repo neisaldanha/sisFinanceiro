@@ -70,7 +70,7 @@
  <div class="col-lg-12 col-sm-12 col-md-12  col-xs-12" id="salvar">
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Salvar</button>
-            	<button class="btn btn-danger" type="reset">Cancelar</button>
+                <a href="{{url('seguranca/usuario')}}" class="btn btn-danger" type="submit">Cancelar</a>
             </div>
 
 			{!!Form::close()!!}		
