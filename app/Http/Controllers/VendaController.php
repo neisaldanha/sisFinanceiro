@@ -28,10 +28,11 @@ class VendaController extends Controller
     		->join('pessoa as p', 'v.idcliente', '=', 'p.idpessoas')
     		->join('detalhe_venda as dv', 'v.idvenda', '=', 'dv.idvenda')
     		->select('v.idvenda', 'v.data_hora', 'p.nome', 'v.tipo_comprovante', 'v.serie_comprovante', 'v.num_comprovante', 'v.taxa', 'v.estado', 'v.total_venda')
-            ->where('estado', '=', 'A')
+                ->where('estado', '=', 'A')
     		->where('v.num_comprovante', 'LIKE', '%'.$query.'%')
-    		
-    		->orderBy('v.idvenda', 'desc')
+                ->orwhere('v.tipo_comprovante','LIKE','%'.$query.'%')
+                ->orwhere('p.nome','LIKE','%'.$query.'%')
+                ->orderBy('v.idvenda', 'desc')
     		
     		->paginate(7);
 
