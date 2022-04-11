@@ -55,8 +55,8 @@ class ProdutoController extends Controller
     	
     	if(Input::hasFile('imagem')){
     		$file=Input::file('imagem');
-    		$file->move(public_path().'/imagens/produtos/', 
-    			$file->getClientOriginalName());
+    		$file->move(public_path().'/imagens/produtos/',
+    				$file->getClientOriginalName());
     		$produto->imagem=$file->getClientOriginalName();
     	}
     	
@@ -80,6 +80,8 @@ class ProdutoController extends Controller
     }
 
     public function update(ProdutoFormRequest $request, $id){
+    	
+    	//dd($id);
     	$produto=Produto::findOrFail($id);
     	
     	$produto->idcategoria=$request->get('idcategoria');
